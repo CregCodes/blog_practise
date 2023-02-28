@@ -65,3 +65,18 @@ content: [
 ],
 };
 To learn more about custom PostCSS configuration, check out the documentation for PostCSS.
+
+### Gray matter- Metadata in MarkDown Files
+
+You might have noticed that each markdown file has a metadata section at the top containing title and date. This is called YAML Front Matter, which can be parsed using a library called gray-matter.
+
+Installing gray-matter
+First, install gray-matter which lets us parse the metadata in each markdown file.
+
+npm install gray-matter
+Creating the utility function to read the file system
+Next, we’ll create a utility function for parsing data from the file system. With this utility function, we’d like to:
+
+Parse each markdown file and get title, date, and file name (which will be used as id for the post URL).
+List the data on the index page, sorted by date.
+Create a top-level directory called lib in the root directory

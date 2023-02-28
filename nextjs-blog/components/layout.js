@@ -12,13 +12,13 @@ Added images with next/image, which are preloaded with the priority attribute
  */
 
 const name = "Craig Grady";
-export const siteTitle = "Next.js Sample Website";
+export const siteTitle = "Mildly Interesting";
 
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/images/profile.jpg" />
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
