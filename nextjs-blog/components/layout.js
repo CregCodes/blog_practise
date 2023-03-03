@@ -11,7 +11,7 @@ Boolean home prop which will adjust the size of the title and the image
 Added images with next/image, which are preloaded with the priority attribute
  */
 
-const name = "Craig Grady";
+const name = "Mildly Interesting";
 export const siteTitle = "Mildly Interesting";
 
 export default function Layout({ children, home }) {

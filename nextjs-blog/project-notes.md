@@ -48,6 +48,7 @@ Here are the steps to add Tailwind CSS. First, install the packages:
 npm install -D tailwindcss autoprefixer postcss
 Then, create a postcss.config.js:
 
+```
 // postcss.config.js
 module.exports = {
 plugins: {
@@ -55,8 +56,11 @@ tailwindcss: {},
 autoprefixer: {},
 },
 };
+```
+
 We also recommend configuring content sources by specifying the content option on tailwind.config.js:
 
+```
 // tailwind.config.js
 module.exports = {
 content: [
@@ -66,6 +70,8 @@ content: [
 // be as specific as possible with your content configuration.
 ],
 };
+```
+
 To learn more about custom PostCSS configuration, check out the documentation for PostCSS.
 
 ### Gray matter- Metadata in MarkDown Files

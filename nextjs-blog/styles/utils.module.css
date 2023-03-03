@@ -3,7 +3,6 @@
 /**You can reuse these utility classes throughout an application, and you may even use utility classes in your global.css file. Utility classes refer to an approach of writing CSS selectors rather than a method (e.g. global styles, CSS modules, Sass, etc).  */
 .heading2Xl {
   font-size: 2.5rem;
-  font: orange;
   line-height: 1.2;
   font-weight: 800;
   letter-spacing: -0.05rem;
@@ -12,7 +11,6 @@
 
 .headingXl {
   font-size: 2rem;
-  font: orange;
   line-height: 1.3;
   font-weight: 800;
   letter-spacing: -0.05rem;
@@ -21,14 +19,13 @@
 
 .headingLg {
   font-size: 1.5rem;
-  font: orange;
   line-height: 1.4;
   margin: 1rem 0;
 }
 
 .headingMd {
   font-size: 1.2rem;
-  font: orange;
+
   line-height: 1.5;
 }
 
