@@ -18,6 +18,8 @@ id: post.id,
 }
 ```
 
+- Switching to External API fetch if data is hosted in a different data source
+
 ## Development vs. Production
 
 In development (npm run dev or yarn dev), getStaticPaths runs on every request.
