@@ -3,7 +3,7 @@ title: "Giving it a go"
 date: "2023-03-06"
 ---
 
-## Hello, so here it is...
+## Hello, So Here It Is...
 
 I followed a Next.js tutorial to create my own little space on the internet to write a bit about my experiences of learning to code, and to also hopefully capture some snapshots of my development over time.
 
@@ -15,13 +15,13 @@ To be honest though- I find calling myself a developer a bit strange, and it doe
 
 ## The Finished Article
 
-So I could easily imagine that- given the scope of how much you can do with code, with development, and with software- most so called "developers" might feel a bit weird about being labelled as such, because in reality being a dev is about constantly developing.
+So I could easily imagine that- given the scope of how much you can do with code, with development, and with software- most so called "developers" might feel a bit weird about being labelled as such, because in reality being a dev is about constantly developing. (Right?)
 
-**So with that in mind** I hope this site can start as a learning diary, and you can both see as well as read as I go about doing it all again- bending, testing, breaking, and experimenting to develop this into something new.
+**So with that in mind** I hope this site can start as a learning diary- and you can both see, as well as read, as I go about doing it all again- bending, testing, breaking, and experimenting to develop this into something new. You can probably smell the **anxiety** from wherever you are.
 
-I hope you enjoy reading this- and maybe you might identify with the highs and the lows of me trying to figure out how this thing that I have made actually works.
+I hope you enjoy reading this- and maybe you might identify with the highs and the lows of trying to figure out how this thing that I have made actually works.
 
-## If you're a fellow traveller
+## If You're A Fellow Traveller
 
 If you are also, like me, at the start of a journey of learning how to "code". I thought I might end with some tips (or rather- things that might help you that I didn't do right away until I got stressed and sought advice from wiser people).
 

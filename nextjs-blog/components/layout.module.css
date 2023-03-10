@@ -12,6 +12,7 @@
   color: blue;
   background-color: aliceblue;
   opacity: 80%;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 .backToHome {

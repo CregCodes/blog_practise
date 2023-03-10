@@ -16,7 +16,10 @@ body {
 
 a {
   color: blue;
+  font-family: "IBM Plex Mono", monospace;
+  background-color: aliceblue;
   text-decoration: none;
+  padding-inline: 5px;
 }
 
 a:hover {

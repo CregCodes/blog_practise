@@ -23,6 +23,7 @@ export default function Layout({ children, home }) {
           name="description"
           content="Building a time capsule blog project"
         />
+
         <meta
           property="og:image"
           content={`https://og-image.vercel.app/${encodeURI(
