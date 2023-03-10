@@ -9,6 +9,9 @@
   flex-direction: column;
   align-items: center;
   box-shadow: 20px 10px;
+  color: blue;
+  background-color: aliceblue;
+  opacity: 80%;
 }
 
 .backToHome {

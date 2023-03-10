@@ -21,7 +21,7 @@ export default function Layout({ children, home }) {
         <link rel="icon" href="/images/profile.jpg" />
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Building a time capsule blog project"
         />
         <meta
           property="og:image"
@@ -54,7 +54,7 @@ export default function Layout({ children, home }) {
                 className={utilStyles.borderCircle}
                 height={108}
                 width={108}
-                alt=""
+                alt="Robert Redford nodding picture"
               />
             </Link>
             <h2 className={utilStyles.headingLg}>
