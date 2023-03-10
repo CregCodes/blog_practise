@@ -28,13 +28,16 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>
+        <h2 className={utilStyles.padding1px}>
+          Welcome to something Mildly Interesting
+        </h2>
+        <p className={utilStyles.padding1px}>
           [Hey I'm Craig, I'm a somewhat Design Researcher and somehow Junior
           Developer.]
         </p>
-        <p>
+        <p className={utilStyles.padding1px}>
           [I'm based in the UK- and I'd love to work with you. You can contact
-          me <a href="https://twitter.com/CraigGrady8">here.]</a>
+          me <a href="https://twitter.com/CraigGrady8">here.</a>]
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
