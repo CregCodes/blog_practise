@@ -1,6 +1,7 @@
-import Layout from "../../components/layout";
+import Layout from "../../components/layout/layout";
 import Head from "next/head";
-import Date from "../../components/date";
+import Date from "../../components/date/date";
+import Navbar from "../../components/navbar/navbar";
 import utilStyles from "../../styles/utils.module.css";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 
@@ -26,20 +27,23 @@ export async function getStaticPaths() {
 
 export default function Post({ postData }) {
   return (
-    <Layout>
-      <Head>
-        <title>{postData.title}</title>
-      </Head>
-      <article>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        <div className={utilStyles.lightText}>
-          <Date dateString={postData.date} />
-        </div>
-        <div
-          dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
-          className={utilStyles.headingMd}
-        />
-      </article>
-    </Layout>
+    <>
+      <Navbar />
+      <Layout>
+        <Head>
+          <title>{postData.title}</title>
+        </Head>
+        <article>
+          <h1 className={utilStyles.headingXl}>{postData.title}</h1>
+          <div className={utilStyles.lightText}>
+            <Date dateString={postData.date} />
+          </div>
+          <div
+            dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+            className={utilStyles.headingMd}
+          />
+        </article>
+      </Layout>
+    </>
   );
 }

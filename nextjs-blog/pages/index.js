@@ -1,7 +1,8 @@
 import Head from "next/head";
-import Layout, { siteTitle } from "../components/layout";
+import Layout, { siteTitle } from "../components/layout/layout";
 import Link from "next/link";
-import Date from "../components/date";
+import Date from "../components/date/date";
+import Navbar from "../components/navbar/navbar";
 import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
 
@@ -23,44 +24,47 @@ export async function getStaticProps() {
 /**By returning allPostsData inside the props object in getStaticProps, the blog posts will be passed to the Home component as a prop. */
 export default function Home({ allPostsData }) {
   return (
-    <Layout home>
-      <Head>
-        <title>{siteTitle}</title>
-      </Head>
-      <section className={utilStyles.headingMd}>
-        <h2 className={utilStyles.padding1px}>
-          Welcome to something Mildly Interesting
-        </h2>
-        <p className={utilStyles.padding1px}>
-          [Hey I'm Craig, I'm a <b>Design Researcher</b> and{" "}
-          <b>Junior Developer</b>.]
-        </p>
-        <p className={utilStyles.padding1px}>
-          [I've been working in the <b>Charity</b> and <b>Public Sector</b> for
-          10 years, and in <b>research</b> on the social impacts of technology.
-          I've also been learning how to code, and have graduated from a full
-          stack development bootcamp.]
-        </p>
-        <p className={utilStyles.padding1px}>
-          [I'm based in the UK- and I'd love to work with you. You can contact
-          me <a href="https://twitter.com/CraigGrady8">here.</a>]
-        </p>
-      </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Time Capsule</h2>
-        <p>[Take a look at what I've been learning.]</p>
-        <ul className={utilStyles.list}>
-          {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
-              <Link href={`/posts/${id}`}>{title}</Link>
-              <br />
-              <small className={utilStyles.lightText}>
-                <Date dateString={date} />
-              </small>
-            </li>
-          ))}
-        </ul>
-      </section>
-    </Layout>
+    <>
+      <Navbar />
+      <Layout home>
+        <Head>
+          <title>{siteTitle}</title>
+        </Head>
+        <section className={utilStyles.headingMd}>
+          <h2 className={utilStyles.padding1px}>
+            Welcome to something Mildly Interesting
+          </h2>
+          <p className={utilStyles.padding1px}>
+            [Hey I'm Craig, I'm a <b>Design Researcher</b> and{" "}
+            <b>Junior Developer</b>.]
+          </p>
+          <p className={utilStyles.padding1px}>
+            [I've been working in the <b>Charity</b> and <b>Public Sector</b>{" "}
+            for 10 years, and in <b>research</b> on the social impacts of
+            technology. I've also been learning how to code, and have graduated
+            from a full stack development bootcamp.]
+          </p>
+          <p className={utilStyles.padding1px}>
+            [I'm based in the UK- and I'd love to work with you. You can contact
+            me <a href="https://twitter.com/CraigGrady8">here.</a>]
+          </p>
+        </section>
+        <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+          <h2 className={utilStyles.headingLg}>Time Capsule</h2>
+          <p>[Take a look at what I've been learning.]</p>
+          <ul className={utilStyles.list}>
+            {allPostsData.map(({ id, date, title }) => (
+              <li className={utilStyles.listItem} key={id}>
+                <Link href={`/posts/${id}`}>{title}</Link>
+                <br />
+                <small className={utilStyles.lightText}>
+                  <Date dateString={date} />
+                </small>
+              </li>
+            ))}
+          </ul>
+        </section>
+      </Layout>
+    </>
   );
 }
