@@ -32,8 +32,14 @@ export default function Home({ allPostsData }) {
           Welcome to something Mildly Interesting
         </h2>
         <p className={utilStyles.padding1px}>
-          [Hey I'm Craig, I'm a somewhat Design Researcher and somehow Junior
-          Developer.]
+          [Hey I'm Craig, I'm a <b>Design Researcher</b> and{" "}
+          <b>Junior Developer</b>.]
+        </p>
+        <p className={utilStyles.padding1px}>
+          [I've been working in the <b>Charity</b> and <b>Public Sector</b> for
+          10 years, and in <b>research</b> on the social impacts of technology.
+          I've also been learning how to code, and have graduated from a full
+          stack development bootcamp.]
         </p>
         <p className={utilStyles.padding1px}>
           [I'm based in the UK- and I'd love to work with you. You can contact
@@ -41,7 +47,8 @@ export default function Home({ allPostsData }) {
         </p>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Blog</h2>
+        <h2 className={utilStyles.headingLg}>Time Capsule</h2>
+        <p>[Take a look at what I've been learning.]</p>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
