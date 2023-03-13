@@ -11,6 +11,19 @@ I've also been making a list of features to include in the site to make it more 
 
 Before, this would normally mean that I would then put it off... because it's scary. Not this time though- _no_. This time, I'll be making my plan, looking at examples, and then implementing new features at a nice, _slow_ pace to help me understand what the code is _actually_ doing... or _needs_ to do.
 
+## Navbar Nightmare
+
+- Basic Home navigation at the moment (even though pic & header have links)
+- spacing
+- Inheriting styles
+
+## Scroll To Top
+
+- Code not working as intended... but working?
+- Background image clash
+- Add to layout component? Should be on each page?
+- Need a redesign
+
 ## What's Coming Up?
 
 ## CSS Modules
