@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Navbar from "../navbar/navbar";
 import styles from "./layout.module.css";
 import utilStyles from "../../styles/utils.module.css";
 import Link from "next/link";
@@ -17,6 +18,7 @@ export const siteTitle = "Mildly Interesting";
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
+      <Navbar />
       <Head>
         <link rel="icon" href="/images/profile.jpg" />
         <meta
@@ -69,7 +71,7 @@ export default function Layout({ children, home }) {
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
-          <Link href="/">← Back to home</Link>
+          <Link href="/">← Back To Home</Link>
         </div>
       )}
     </div>
