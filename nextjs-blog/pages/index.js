@@ -25,14 +25,6 @@ export async function getStaticProps() {
   };
 }
 
-// export async function getArchiveStaticProps() {
-//   const allArchiveData = getSortedArchiveData();
-//   return {
-//     props: {
-//       allArchiveData,
-//     },
-//   };
-// }
 /**By returning allPostsData inside the props object in getStaticProps, the blog posts will be passed to the Home component as a prop. */
 export default function Home({ allPostsData, allArchiveData }) {
   return (
@@ -74,8 +66,10 @@ export default function Home({ allPostsData, allArchiveData }) {
           ))}
         </ul>
       </section>
-      <section>
-        <h2></h2>
+      <br></br>
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
+        <h2>Project Archive</h2>
+        <p>[See what I've done in the past]</p>
         <ul className={utilStyles.list}>
           {allArchiveData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>

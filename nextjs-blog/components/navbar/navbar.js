@@ -5,8 +5,12 @@ export default function Navbar() {
   return (
     <nav className={styles.navbar}>
       <div>
-        <Link className={styles.navbar} href="/">
-          Home
+        <Link className={styles.navbarButton} href="/">
+          Home ||
+        </Link>
+
+        <Link className={styles.navbarButton} href="/archive/archive">
+          Archive ||
         </Link>
       </div>
     </nav>
