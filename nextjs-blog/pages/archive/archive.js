@@ -13,13 +13,14 @@ export default function Archive() {
       <section className={utilStyles.headingMd}>
         <h2 className={utilStyles.padding1px}>The Archive</h2>
         <p className={utilStyles.padding1px}>
-          [Hello again, here you can take a look at some of my previous work]
+          [Hello again, here you can take a look at some of my previous work.]
         </p>
         <p>
           [I've been fortunate enough to work on <b>wide variety</b> of projects
           over the years- so I've written a collection of case studies for some
-          of the work I'm most proud of]
+          of the work I'm most proud of.]
         </p>
+        <br />
       </section>
       <section className={utilStyles.headingMd}>
         <h3 className={utilStyles.padding1px}>An Example of</h3>
@@ -30,6 +31,7 @@ export default function Archive() {
           width={300}
           height={300}
         />
+        <br />
         <Link href="/archive/test">Test Link to Case Study</Link>
       </section>
       <section className={utilStyles.headingMd}>
