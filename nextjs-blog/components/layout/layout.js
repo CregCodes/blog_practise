@@ -74,6 +74,11 @@ export default function Layout({ children, home }) {
           <Link href="/">← Back To Home</Link>
         </div>
       )}
+      {!home && (
+        <div className={styles.backToHome}>
+          <Link href="/archive/archive">← Back To Archive</Link>
+        </div>
+      )}
     </div>
   );
 }
